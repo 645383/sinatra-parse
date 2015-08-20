@@ -1,6 +1,6 @@
 require 'csv'
 require 'zip'
-require 'pry'
+# require 'pry'
 
 class ParserService
   NAMES = %w(Account Activity Position Security)
