@@ -1,0 +1,17 @@
+%a{href: '/'} Back to form
+- if accounts[:errors]
+  %div.errors
+    = accounts[:errors]
+- else
+  %ol
+    - accounts.each do |id, data|
+      %li
+        = id
+        %ul
+          -data.each do |date, types|
+            %li
+              = date
+              %ul
+                -types.each do |type|
+                  %li
+                    = type
